@@ -33,7 +33,8 @@ return (
 {user && (photos.map((item,index)=>{
   return (
     <div>
-      <img key={index} src={item.download_url} alt="photo from picsum" width="200"/>
+      {/* eslint-disable-next-line */}
+      <img key={index} src={item.download_url} width="200"/>
       <h2>{item.author}</h2>
     </div>
   )}))}
